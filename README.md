@@ -1,0 +1,67 @@
+# MAC Changer
+
+`mac_changer.py` is a simple Python script that changes the MAC address of a network interface on Linux.
+
+## What It Does
+
+- Accepts a network interface with `-i` or `--interface`
+- Accepts a target MAC address with `-m` or `--mac`
+- Uses `ifconfig` to bring the interface down, change the MAC address, and bring the interface back up
+
+## Requirements
+
+- Python 3
+- `sudo`
+- `ifconfig`
+
+`ifconfig` is usually provided by the `net-tools` package on most Linux distributions.
+
+## Install Dependencies
+
+### Debian / Ubuntu / Kali
+
+```bash
+sudo apt update
+sudo apt install net-tools
+```
+
+### Fedora
+
+```bash
+sudo dnf install net-tools
+```
+
+### RHEL / CentOS
+
+```bash
+sudo yum install net-tools
+```
+
+### Arch Linux
+
+```bash
+sudo pacman -S net-tools
+```
+
+### openSUSE
+
+```bash
+sudo zypper install net-tools
+```
+
+## Usage
+
+```bash
+sudo python3 mac_changer.py -i eth0 -m 00:11:22:33:44:55
+```
+
+Example:
+
+- `-i eth0` selects the network interface
+- `-m 00:11:22:33:44:55` sets the new MAC address
+
+## Notes
+
+- This script is intended for Linux systems where `ifconfig` is available.
+- You typically need root privileges to change a MAC address.
+- Use the correct interface name for your system, such as `eth0`, `wlan0`, or similar.
