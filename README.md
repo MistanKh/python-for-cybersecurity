@@ -8,12 +8,16 @@ This repository is a course-driven collection of small Python tools, supporting 
 
 The goal is to keep each script documented, easy to review, and organized as the repository grows.
 
-## Current Contents
+## Tool Index
 
-| Path | Purpose |
-| --- | --- |
-| `mac_changer/mac_changer.py` | Changes the MAC address of a network interface on Linux |
-| `mac_changer/README.md` | Usage notes and dependency instructions for `mac_changer.py` |
+| Tool | Category | Status | Summary |
+| --- | --- | --- | --- |
+| `mac_changer` | Networking | Complete | Changes the MAC address of a Linux network interface |
+
+Tool documentation:
+
+- `mac_changer/mac_changer.py`
+- `mac_changer/README.md`
 
 ## Repository Convention
 
@@ -23,6 +27,16 @@ Each tool in this repository should live in its own folder and can include:
 - a local README, such as `tool_name/README.md`
 
 This keeps the root clean while making each exercise easy to find and easier to expand later.
+
+## Learning Roadmap
+
+This repository will continue expanding as I work through the course and build more tools around topics such as:
+
+- network scanning
+- packet analysis
+- man-in-the-middle concepts
+- malware-related scripting exercises
+- defensive and monitoring techniques
 
 ## Course Context
 
