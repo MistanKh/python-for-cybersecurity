@@ -10,19 +10,19 @@ The goal is to keep each script documented, easy to review, and organized as the
 
 ## Current Contents
 
-| File | Purpose |
+| Path | Purpose |
 | --- | --- |
-| `mac_changer.py` | Changes the MAC address of a network interface on Linux |
-| `mac_changer.md` | Usage notes and dependency instructions for `mac_changer.py` |
+| `mac_changer/mac_changer.py` | Changes the MAC address of a network interface on Linux |
+| `mac_changer/README.md` | Usage notes and dependency instructions for `mac_changer.py` |
 
 ## Repository Convention
 
-Each tool in this repository can have:
+Each tool in this repository should live in its own folder and can include:
 
-- a Python script, such as `tool_name.py`
-- a matching documentation file, such as `tool_name.md`
+- a Python script, such as `tool_name/tool_name.py`
+- a local README, such as `tool_name/README.md`
 
-This keeps the root simple while making each exercise easy to find.
+This keeps the root clean while making each exercise easy to find and easier to expand later.
 
 ## Course Context
 
