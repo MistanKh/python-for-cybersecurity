@@ -1,39 +1,44 @@
 # Python for Cybersecurity
 
-This repository contains Python scripts and notes I am building while taking the Coursera course **Exploit Development, Malware, & Defensive Strategies**.
+Python cybersecurity practice scripts and notes built while following the Coursera course **Exploit Development, Malware, & Defensive Strategies**.
 
-## About This Repository
+## Overview
 
-The goal of this repo is to keep my cybersecurity practice work in one place as I move through the course and implement tools in Python.
+This repository is a course-driven collection of small Python tools, supporting notes, and command-line exercises related to ethical hacking, Linux networking, and defensive security concepts.
 
-Each script may have its own matching documentation file, for example:
+The goal is to keep each script documented, easy to review, and organized as the repository grows.
 
-- `mac_changer.py`
-- `mac_changer.md`
+## Current Contents
 
-## About The Course
+| File | Purpose |
+| --- | --- |
+| `mac_changer.py` | Changes the MAC address of a network interface on Linux |
+| `mac_changer.md` | Usage notes and dependency instructions for `mac_changer.py` |
 
-**Exploit Development, Malware, & Defensive Strategies** is a Coursera course by Packt and part of **The Complete Ethical Hacking Course Specialization**. Based on the Coursera course page, it focuses on building Python tools for ethical hacking, including exploit-related scripting, malware concepts, network attacks, and defensive techniques such as traffic analysis and protection against common attack methods.
+## Repository Convention
 
-The course also covers practical topics such as:
+Each tool in this repository can have:
 
-- Object-oriented programming in Python
-- MAC changer scripting
-- Network scanning
-- Man-in-the-middle concepts
-- Packet listening and traffic analysis
-- Keylogger and backdoor concepts
-- Packaging and persistence-related malware topics
+- a Python script, such as `tool_name.py`
+- a matching documentation file, such as `tool_name.md`
 
-## Structure
+This keeps the root simple while making each exercise easy to find.
 
-This repository will continue to grow as I add more Python-based cybersecurity exercises and supporting notes from the course.
+## Course Context
 
-## Important Note
-
-This repository is for educational and authorized security learning purposes only. Any offensive security technique should only be used in legal, controlled, and explicitly authorized environments.
-
-## Source
+**Exploit Development, Malware, & Defensive Strategies** is a Coursera course by Packt and part of **The Complete Ethical Hacking Course Specialization**. The course focuses on Python-based security tooling and introduces topics such as exploit scripting, malware concepts, packet analysis, network attacks, and defensive techniques.
 
 Course reference:
 https://www.coursera.org/learn/packt-9781839210495-p4-3eje3
+
+## Status
+
+This is an educational practice repository. Some scripts are intentionally small and focused on learning specific concepts rather than production-ready tooling.
+
+## Ethical Use
+
+Use these techniques only in legal, controlled, and explicitly authorized environments.
+
+## License
+
+This project is licensed under the MIT License. See `LICENSE` for details.
