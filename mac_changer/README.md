@@ -16,6 +16,14 @@
 
 `ifconfig` is usually provided by the `net-tools` package on most Linux distributions.
 
+## Requirements Note
+
+This tool is intended for Linux systems and requires:
+
+- Python 3
+- `net-tools` for `ifconfig`
+- sufficient privileges to modify a network interface
+
 ## Install Dependencies
 
 ### Debian / Ubuntu / Kali
@@ -59,6 +67,17 @@ Example:
 
 - `-i eth0` selects the network interface
 - `-m 00:11:22:33:44:55` sets the new MAC address
+
+## Example Output
+
+Example terminal output:
+
+```text
+Mac Changer Started
+Mac Changer Completed
+```
+
+You can replace this with an actual screenshot or a fuller terminal capture later if you want the repository page to feel more complete.
 
 ## Notes
 
