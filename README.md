@@ -12,12 +12,14 @@ The goal is to keep each script documented, easy to review, and organized as the
 
 | Tool | Category | Status | Summary |
 | --- | --- | --- | --- |
-| `mac_changer` | Networking | Complete | Changes the MAC address of a Linux network interface |
+| `MAC Changer` | Networking | Complete | Changes the MAC address of a Linux network interface |
+| `Network Scanner` | Networking | Draft | Reserved for local network scanning work with Scapy |
 
 Tool documentation:
 
 - `MAC Changer/mac_changer.py`
 - `MAC Changer/README.md`
+- `Network Scanner/scanner.py`
 
 ## Repository Convention
 
