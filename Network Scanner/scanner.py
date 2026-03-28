@@ -19,7 +19,9 @@ def scan(ip):
     combined_packet = broadcast_packet / arp_request_packet
     (answered_list, unanswered_list) = scapy.srp(combined_packet, timeout=1)
     # Show the devices that answered the request.
-    answered_list.summary()
+    # answered_list.summary()
+    for packet in answered_list:
+        print(str(packet[1].psrc) + " : " + str(packet[1].hwsrc))
 
 # Read the user input and start the scan.
 ip_address = user_input()
