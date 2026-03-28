@@ -16,8 +16,8 @@ The goal is to keep each script documented, easy to review, and organized as the
 
 Tool documentation:
 
-- `mac_changer/mac_changer.py`
-- `mac_changer/README.md`
+- `MAC Changer/mac_changer.py`
+- `MAC Changer/README.md`
 
 ## Repository Convention
 
