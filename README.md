@@ -4,22 +4,56 @@ Python cybersecurity practice scripts and notes built while following the Course
 
 ## Overview
 
-This repository is a course-driven collection of small Python tools, supporting notes, and command-line exercises related to ethical hacking, Linux networking, and defensive security concepts.
+This repository is a growing collection of small Python security tools, command-line exercises, and notes focused on networking, ethical hacking concepts, packet-level scripting, and defensive security practice.
 
-The goal is to keep each script documented, easy to review, and organized as the repository grows.
+Each tool is kept in its own folder with its script and local documentation so the repository stays easy to browse as new exercises are added.
+
+## Repository Structure
+
+```text
+.
+|-- MAC Changer/
+|   |-- README.md
+|   `-- mac_changer.py
+|-- MITM/
+|   |-- README.md
+|   `-- spoofer.py
+|-- Network Scanner/
+|   |-- README.md
+|   `-- scanner.py
+|-- LICENSE
+`-- README.md
+```
 
 ## Tool Index
 
 | Tool | Category | Status | Summary |
 | --- | --- | --- | --- |
 | `MAC Changer` | Networking | Complete | Changes the MAC address of a Linux network interface |
-| `Network Scanner` | Networking | Draft | Reserved for local network scanning work with Scapy |
+| `Network Scanner` | Reconnaissance | In Progress | Performs ARP-based local network discovery with Scapy |
+| `MITM` | Man-in-the-Middle | In Progress | Sends ARP spoofing packets between a target and gateway for lab-based MITM practice |
 
-Tool documentation:
+## Tool Documentation
 
-- `MAC Changer/mac_changer.py`
-- `MAC Changer/README.md`
-- `Network Scanner/scanner.py`
+- `MAC Changer`
+  - Script: `MAC Changer/mac_changer.py`
+  - Docs: `MAC Changer/README.md`
+- `Network Scanner`
+  - Script: `Network Scanner/scanner.py`
+  - Docs: `Network Scanner/README.md`
+- `MITM`
+  - Script: `MITM/spoofer.py`
+  - Docs: `MITM/README.md`
+
+## Current Focus
+
+The current set of exercises centers on:
+
+- interface manipulation
+- local network discovery
+- ARP packet crafting with Scapy
+- man-in-the-middle lab concepts
+- building familiarity with Python-based security tooling
 
 ## Repository Convention
 
@@ -30,19 +64,9 @@ Each tool in this repository should live in its own folder and can include:
 
 This keeps the root clean while making each exercise easy to find and easier to expand later.
 
-## Learning Roadmap
-
-This repository will continue expanding as I work through the course and build more tools around topics such as:
-
-- network scanning
-- packet analysis
-- man-in-the-middle concepts
-- malware-related scripting exercises
-- defensive and monitoring techniques
-
 ## Course Context
 
-**Exploit Development, Malware, & Defensive Strategies** is a Coursera course by Packt and part of **The Complete Ethical Hacking Course Specialization**. The course focuses on Python-based security tooling and introduces topics such as exploit scripting, malware concepts, packet analysis, network attacks, and defensive techniques.
+**Exploit Development, Malware, & Defensive Strategies** is a Coursera course by Packt and part of **The Complete Ethical Hacking Course Specialization**. The course introduces Python-based security tooling and covers topics such as exploit development concepts, malware-related scripting, packet analysis, network attacks, and defensive techniques.
 
 Course reference:
 https://www.coursera.org/learn/packt-9781839210495-p4-3eje3
