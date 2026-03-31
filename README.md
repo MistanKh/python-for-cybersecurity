@@ -36,10 +36,10 @@ Each tool is kept in its own folder with its script and local documentation so t
 | Tool | Category | Status | Summary |
 | --- | --- | --- | --- |
 | `MAC Changer` | Networking | Complete | Changes the MAC address of a Linux network interface |
-| `Network Scanner` | Reconnaissance | In Progress | Performs ARP-based local network discovery with Scapy |
-| `MITM` | Man-in-the-Middle | In Progress | Sends ARP spoofing packets between a target and gateway for lab-based MITM practice |
-| `Packet Listener` | Packet Analysis | In Progress | Sniffs HTTP traffic on a selected interface and prints raw request payload data |
-| `Keylogger` | Host Monitoring | In Progress | Captures keystrokes with `pynput` and periodically sends the logged data by email |
+| `Network Scanner` | Reconnaissance | Complete | Performs ARP-based local network discovery with Scapy |
+| `MITM` | Man-in-the-Middle | Complete | Sends ARP spoofing packets between a target and gateway for lab-based MITM practice |
+| `Packet Listener` | Packet Analysis | Complete | Sniffs HTTP traffic on a selected interface and prints raw request payload data |
+| `Keylogger` | Host Monitoring | Complete | Captures keystrokes with `pynput` and periodically sends the logged data by email |
 
 ## Tool Documentation
 
