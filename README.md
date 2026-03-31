@@ -21,6 +21,9 @@ Each tool is kept in its own folder with its script and local documentation so t
 |-- Network Scanner/
 |   |-- README.md
 |   `-- scanner.py
+|-- Packet Listener/
+|   |-- README.md
+|   `-- listener_http.py
 |-- LICENSE
 `-- README.md
 ```
@@ -32,6 +35,7 @@ Each tool is kept in its own folder with its script and local documentation so t
 | `MAC Changer` | Networking | Complete | Changes the MAC address of a Linux network interface |
 | `Network Scanner` | Reconnaissance | In Progress | Performs ARP-based local network discovery with Scapy |
 | `MITM` | Man-in-the-Middle | In Progress | Sends ARP spoofing packets between a target and gateway for lab-based MITM practice |
+| `Packet Listener` | Packet Analysis | In Progress | Sniffs HTTP traffic on a selected interface and prints raw request payload data |
 
 ## Tool Documentation
 
@@ -44,6 +48,9 @@ Each tool is kept in its own folder with its script and local documentation so t
 - `MITM`
   - Script: `MITM/spoofer.py`
   - Docs: `MITM/README.md`
+- `Packet Listener`
+  - Script: `Packet Listener/listener_http.py`
+  - Docs: `Packet Listener/README.md`
 
 ## Current Focus
 
@@ -53,6 +60,7 @@ The current set of exercises centers on:
 - local network discovery
 - ARP packet crafting with Scapy
 - man-in-the-middle lab concepts
+- packet sniffing and HTTP request inspection
 - building familiarity with Python-based security tooling
 
 ## Repository Convention
