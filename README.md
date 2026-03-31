@@ -12,6 +12,9 @@ Each tool is kept in its own folder with its script and local documentation so t
 
 ```text
 .
+|-- Keylogger/
+|   |-- README.md
+|   `-- keylogger.py
 |-- MAC Changer/
 |   |-- README.md
 |   `-- mac_changer.py
@@ -36,12 +39,16 @@ Each tool is kept in its own folder with its script and local documentation so t
 | `Network Scanner` | Reconnaissance | In Progress | Performs ARP-based local network discovery with Scapy |
 | `MITM` | Man-in-the-Middle | In Progress | Sends ARP spoofing packets between a target and gateway for lab-based MITM practice |
 | `Packet Listener` | Packet Analysis | In Progress | Sniffs HTTP traffic on a selected interface and prints raw request payload data |
+| `Keylogger` | Host Monitoring | In Progress | Captures keystrokes with `pynput` and periodically sends the logged data by email |
 
 ## Tool Documentation
 
 - `MAC Changer`
   - Script: `MAC Changer/mac_changer.py`
   - Docs: `MAC Changer/README.md`
+- `Keylogger`
+  - Script: `Keylogger/keylogger.py`
+  - Docs: `Keylogger/README.md`
 - `Network Scanner`
   - Script: `Network Scanner/scanner.py`
   - Docs: `Network Scanner/README.md`
@@ -61,6 +68,8 @@ The current set of exercises centers on:
 - ARP packet crafting with Scapy
 - man-in-the-middle lab concepts
 - packet sniffing and HTTP request inspection
+- keyboard event monitoring with `pynput`
+- timed log delivery with SMTP
 - building familiarity with Python-based security tooling
 
 ## Repository Convention
