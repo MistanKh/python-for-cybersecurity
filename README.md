@@ -12,6 +12,10 @@ Each tool is kept in its own folder with its script and local documentation so t
 
 ```text
 .
+|-- Backdoor/
+|   |-- README.md
+|   |-- backdoor.py
+|   `-- backdoor_listener.py
 |-- Keylogger/
 |   |-- README.md
 |   `-- keylogger.py
@@ -40,12 +44,16 @@ Each tool is kept in its own folder with its script and local documentation so t
 | `MITM` | Man-in-the-Middle | Complete | Sends ARP spoofing packets between a target and gateway for lab-based MITM practice |
 | `Packet Listener` | Packet Analysis | Complete | Sniffs HTTP traffic on a selected interface and prints raw request payload data |
 | `Keylogger` | Host Monitoring | Complete | Captures keystrokes with `pynput` and periodically sends the logged data by email |
+| `Backdoor` | Socket Programming | Complete | Demonstrates a simple listener/client remote command execution flow over a local TCP connection |
 
 ## Tool Documentation
 
 - `MAC Changer`
   - Script: `MAC Changer/mac_changer.py`
   - Docs: `MAC Changer/README.md`
+- `Backdoor`
+  - Scripts: `Backdoor/backdoor.py`, `Backdoor/backdoor_listener.py`
+  - Docs: `Backdoor/README.md`
 - `Keylogger`
   - Script: `Keylogger/keylogger.py`
   - Docs: `Keylogger/README.md`
@@ -68,6 +76,7 @@ The current set of exercises centers on:
 - ARP packet crafting with Scapy
 - man-in-the-middle lab concepts
 - packet sniffing and HTTP request inspection
+- basic TCP client/server command exchange
 - keyboard event monitoring with `pynput`
 - timed log delivery with SMTP
 - building familiarity with Python-based security tooling
