@@ -31,7 +31,12 @@ Each tool is kept in its own folder with its script and local documentation so t
 |-- Packet Listener/
 |   |-- README.md
 |   `-- listener_http.py
+|-- Package/
+|   |-- README.md
+|   |-- metallica.pdf
+|   `-- packaging.py
 |-- LICENSE
+|-- packaging.spec
 `-- README.md
 ```
 
@@ -45,6 +50,7 @@ Each tool is kept in its own folder with its script and local documentation so t
 | `Packet Listener` | Packet Analysis | Complete | Sniffs HTTP traffic on a selected interface and prints raw request payload data |
 | `Keylogger` | Host Monitoring | Complete | Captures keystrokes with `pynput` and periodically sends the logged data by email |
 | `Backdoor` | Socket Programming | Complete | Demonstrates a simple listener/client remote command execution flow over a local TCP connection |
+| `Package` | Persistence Lab | Complete | Demonstrates a Windows packaging and logon persistence workflow with a bundled decoy PDF |
 
 ## Tool Documentation
 
@@ -66,6 +72,10 @@ Each tool is kept in its own folder with its script and local documentation so t
 - `Packet Listener`
   - Script: `Packet Listener/listener_http.py`
   - Docs: `Packet Listener/README.md`
+- `Package`
+  - Script: `Package/packaging.py`
+  - Docs: `Package/README.md`
+  - Build spec: `packaging.spec`
 
 ## Current Focus
 
@@ -79,6 +89,7 @@ The current set of exercises centers on:
 - basic TCP client/server command exchange
 - keyboard event monitoring with `pynput`
 - timed log delivery with SMTP
+- Windows packaging and registry-based persistence concepts
 - building familiarity with Python-based security tooling
 
 ## Repository Convention
@@ -87,6 +98,7 @@ Each tool in this repository should live in its own folder and can include:
 
 - a Python script, such as `tool_name/tool_name.py`
 - a local README, such as `tool_name/README.md`
+- optional support files for packaging or demos, such as bundled assets or a build spec
 
 This keeps the root clean while making each exercise easy to find and easier to expand later.
 
