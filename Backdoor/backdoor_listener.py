@@ -13,6 +13,7 @@ class Listener:
         print("Connection Ok from" + str(my_address[0]))
 
     def send_json(self, data):
+        # Serialize each command so the client can decode it consistently.
         json_data = json.dumps(data)
         self.my_connection.send(json_data.encode())
 
@@ -27,6 +28,7 @@ class Listener:
     def start_listening(self):
         while True:
             command_input = input("Enter a command: ")
+            # Dispatch the command and print the client's response verbatim.
             command_outputs = self.command_execution(command_input)
             print(command_outputs)
 

