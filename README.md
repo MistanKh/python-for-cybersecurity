@@ -1,5 +1,7 @@
 # Python for Cybersecurity
 
+> 📄 Case study & write-up: **[mistan.dev/projects/python-for-cybersecurity](https://mistan.dev/projects/python-for-cybersecurity/)**
+
 Python cybersecurity practice scripts and notes built while following the Coursera course **Exploit Development, Malware, & Defensive Strategies**.
 
 ## Overview
